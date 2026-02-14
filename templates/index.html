@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulScan | Security Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+
+    <!-- Minimal Logo -->
+    <div class="logo">
+        <span class="logo-main">VulScan</span>
+        <span class="logo-accent"></span>
+    </div>
+
+    <p class="tagline">Automated Web Vulnerability Assessment</p>
+
+    <div class="scan-section">
+        <input type="text" id="target" placeholder="Enter target domain (example.com)">
+        <button onclick="startScan()">Initiate Scan</button>
+    </div>
+
+    <div class="progress-wrapper hidden" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div id="results"></div>
+
+    <div class="download-section hidden" id="downloadSection">
+        <button class="download-btn" onclick="downloadReport()">Download Report</button>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
